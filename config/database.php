@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Str;
 
+$host = 'l6glqt8gsx37y4hs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+$username = 'zrq8s4xaf2pvof0k'
+$password = 'xc80ddjapuaj3w3b'
+$database = 'l45k3ed06hge7rsq';
+
 return [
 
     /*
@@ -46,11 +51,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => $host,//env('DB_HOST', '127.0.0.1'),
+            'port' => '3306',//env('DB_PORT', '3306'),
+            'database' => $database, //env('DB_DATABASE', 'forge'),
+            'username' => $username, //env('DB_USERNAME', 'forge'),
+            'password' => $password,//env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
